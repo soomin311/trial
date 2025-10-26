@@ -1,0 +1,281 @@
+body{
+    font-family: "Poppins", "Noto Sans KR", sans-serif;
+		background-color:#f2f6f8;
+	}
+	#footer{
+		height:30px;
+		vertical-align:middle;
+		text-align:right;
+		clear:both;
+		padding-right:3px;
+		background-color:#317082;
+		margin-top:2px;
+		width:790px;
+	}
+	#footer form{
+		margin:0px;
+		margin-top:2px;
+	}
+	#dhtmlgoodies_dragDropContainer{	/* Main container for this script */
+		width:1400px;
+		height:650px;
+		margin:30px auto;
+		border:1px solid #2b6cb0;
+		background-color:#FFF;
+		-moz-user-select:none;
+        display: block;
+	}
+	#dhtmlgoodies_dragDropContainer ul{	/* General rules for all <ul> */
+		margin-top:2px;
+		margin-left:2px;
+		margin-bottom:2px;
+		padding:2px;
+	}
+	
+	#dhtmlgoodies_dragDropContainer li,#dragContent li,li#indicateDestination{	/* Movable items, i.e. <LI> */
+		list-style-type:none;
+		height:15px;
+		background-color:#ebf8ff;
+		border:1px solid #000;
+		padding:2px;
+		margin-bottom:2px;
+		cursor:pointer;
+		font-size:13px;
+		line-height:15px;
+	}
+
+	li#indicateDestination{	/* Box indicating where content will be dropped - i.e. the one you use if you don't use arrow */
+		border:1px dotted #600;	
+		background-color:#FFF;
+	}
+		
+	#dhtmlgoodies_dragDropContainer ul li.correctAnswer{	/* Correctly moved item */
+		background-color:green;
+		color:#FFF;
+	}
+	#dhtmlgoodies_dragDropContainer ul li.wrongAnswer{	/* Item moved to wrong box */
+		background-color:red;
+		color:#FFF;
+	}
+	
+	
+	/* LEFT COLUMN CSS */
+	div#dhtmlgoodies_listOfItems{	/* Left column "Available students" */
+		
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+		
+		/* CSS HACK */
+		width: 180px;	/* IE 5.x */
+		width/* */:/**/160px;	/* Other browsers */
+		width: /**/160px;
+				
+	}
+	#dhtmlgoodies_listOfItems ul{	/* Left(Sources) column <ul> */
+		height:560px;	
+
+	}
+		
+	div#dhtmlgoodies_listOfItems div{
+		border:1px solid #999;		
+	}
+	div#dhtmlgoodies_listOfItems div ul{	/* Left column <ul> */
+		margin-left:10px;	/* Space at the left of list - the arrow will be positioned there */
+	}
+	#dhtmlgoodies_listOfItems div p{	/* Heading above left column */
+		margin:0px;	
+		font-weight:bold;
+		padding-left:12px;
+		background-color:#2b6cb0;	
+		color:#FFF;
+		margin-bottom:5px;
+	}
+	/* END LEFT COLUMN CSS */
+	
+	#dhtmlgoodies_dragDropContainer .mouseover{	/* Mouse over effect DIV box in right column */
+		background-color:#ebf8ff;
+		border:1px solid #2b6cb0;
+	}
+	
+	/* Start main container CSS */
+	
+	div#dhtmlgoodies_mainContainer{	/* Right column DIV */
+		width:1200px;
+		float:right;	
+	}
+	#dhtmlgoodies_mainContainer div{	/* Parent <div> of small boxes */
+		float:left;
+		margin-right:10px;
+		margin-bottom:10px;
+		margin-top:0px;
+		border:1px solid #999;
+
+		/* CSS HACK */
+		width: 172px;	/* IE 5.x */
+		width/* */:/**/170px;	/* Other browsers */
+		width: /**/170px;
+				
+	}
+	#dhtmlgoodies_mainContainer div ul{
+		margin-left:10px;
+	}
+	
+	#dhtmlgoodies_mainContainer div p{	/* Heading above small boxes */
+		margin:0px;
+		padding:0px;
+		padding-left:12px;
+		font-weight:bold;
+		background-color:#2b6cb0;	
+		color:#FFF;	
+		margin-bottom:5px;
+	}
+	
+
+	#dragContent{	/* Drag container */
+		position:absolute;
+		width:150px;
+		height:15px;
+		display:none;
+		margin:0px;
+		padding:0px;
+		z-index:2000;
+	}
+
+	#dragDropIndicator{	/* DIV for the small arrow */
+		position:absolute;
+		width:7px;
+		height:10px;
+		display:none;
+		z-index:1000;
+		margin:0px;
+		padding:0px;
+	}
+
+/* === Fix Bloom’s 2x3 layout === */
+#dhtmlgoodies_mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px; /* 두 행 사이 여백 */
+  width: 100%;
+  float: none !important;
+}
+
+#dhtmlgoodies_mainContainer .row {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* 박스 사이 간격 */
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+#dhtmlgoodies_mainContainer .box {
+  width: 220px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+/* ✅ 전체 컨테이너 */
+#dhtmlgoodies_mainContainer {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  float: none !important;
+}
+
+/* ✅ 그룹 박스 (Higher / Lower) */
+.row-group {
+  background-color: #f9fcff;
+  border-radius: 10px;
+  padding: 15px 0 25px 0; /* 여백 줄임 */
+  width: 88%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  margin-bottom: 15px;
+}
+
+/* ✅ 그룹 제목 (소제목) */
+.subheading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 19px;
+  color: #2b6cb0;
+  margin: 10px 0 18px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+
+/* 밑줄 장식 */
+.subheading::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: #2b6cb0;
+  margin: 6px auto 0;
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+/* ✅ 행 (3개의 카드 정렬) */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* 간격 축소 */
+}
+
+/* ✅ 카드 박스 */
+.taxonomy-box {
+  width: 230px;
+  height: 190px;
+  border: 1px solid #ccd6e0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(43,108,176,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover 시 약간 강조 */
+.taxonomy-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(43,108,176,0.15);
+}
+
+/* ✅ 카드 제목 */
+.taxonomy-box p {
+  background-color: #2b6cb0;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  border-radius: 8px 8px 0 0;
+  font-size: 15px;
+}
+
+/* ✅ 내부 리스트 */
+.taxonomy-box ul {
+  margin: 0;
+  padding: 8px;
+  height: 130px;
+  overflow-y: auto;
+}
+
+/* ✅ 기존 float 제거 */
+#dhtmlgoodies_mainContainer div {
+  float: none !important;
+}
+
+	.style1 {color: #FF0000}
+
+	
