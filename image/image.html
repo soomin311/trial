@@ -1,98 +1,96 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Image Editing</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
-<body bgcolor="#fefff5">
+<body>
 
-<body style="font-family: 'Arial', 'Helvetica', sans-serif; background-color: #fefff5;">
-<div align="left">
+<div id="wrapper">
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%">
-  <tr>
-    <td width="50%"><form method="POST" name="instantquiz">
-      <table border="0" width="100%" cellspacing="0" cellpadding="0">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <caption style="font-size: 24px; font-weight: bold; margin-bottom: 10px; font-family: 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Arial', sans-serif;">
-      🤖 Soomin's AI Quiz 🤖
-      </caption>
-        <tr>
-          <td width="100%"><div align="center"><center><p><textarea rows="8" name="thequestion"
-          cols="69" wrap="virtual" style="padding: 15px 15px; line-height: 1.5; font-size: 16px; font-family: 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Arial', sans-serif;"></textarea></td>
-        </tr>
-        <tr align="center">
-          <td width="50%"><div align="center"><center><p><br><strong>Feedback: </strong><br><input
-          type="text" name="thesolution" size="30"></td>
-        </tr>
-        <tr align="center">
-          <td width="100%">
-	  <p style="display: flex; align-items: center; justify-content: center; gap: 8px; margin: 10px 0;">
-	    <strong>Your Answer:</strong>
-	    <select name="theresponse" size="1" onChange="responses()">
-              <option value="-----">----</option>
-              <option value="a">a</option>
-              <option value="b">b</option>
-              <option value="c">c</option>
-              <option value="d">d</option>
-            </select>
-	  </p>
+	<!-- Navigation -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+                <li><a href="index.html">About</a></li>
+				<li class="current_page_item"><a href="image.html">Image Editing</a></li>
+				<li><a href="web.html">Web Design</a></li>
+				<li><a href="video.html">Video Production</a></li>
+				<li><a href="animation.html">Animation</a></li>
+				<li><a href="screencast.html">Screencast</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</div>
+	</div>
 
- 	 <div style="text-align: center; margin-top: 10px;">
-	  <input type="button" value="← Back" name="B1"
-            onClick="if (whichone&gt;1){whichone--;generatequestions()}"> <input type="button"
-          value="Next →" name="B2"
-          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br><br>
-          <small><a href="#" onClick="whichone=1;generatequestions();return false">Start Over</a> </small><input
-          type="checkbox" name="cmode" value="ON"><small>Cheat Mode</small><p align="center"><font face="arial" size="-2">This free quiz script provided by </font><font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript Kit</a></font></p></td>
-        </tr>
-      </table>
-    </form>
-    </td>
-  </tr>
-</table>
+	<!-- Page Title -->
+	<div id="logo" class="container">
+		<h1>Image Editing</h1>
+		<p>Book Cover & Personal Logo Design</p>
+	</div>
 
+	<div id="page" class="container">
+
+        <!-- Book Cover Section -->
+        <h2 class="section-title">Book Cover</h2>
+
+        <div class="image-row">
+            <img src="pre_bookcover.png" alt="Original Image" class="project-img">
+            <img src="bookcover.png" alt="Book Cover" class="project-img">
+        </div>
+
+        <p class="project-text">
+        I used the photo above as the original image for my book cover because it was one of the highest-resolution photos I had.
+        Since the background was quite dark, I wrote the title and author names in white for better visibility. To make the author
+        names stand out more clearly from the background, I added a semi-transparent rectangle behind them and applied a blur effect,
+        creating a subtle separation. The original book title began with the word “Mapping,” but because my image shows a
+        star-filled night sky, I replaced it with “Navigating” to better align with the visual theme.
+        </p>
+
+        <p class="project-text">
+        In the original photo, the trees on both sides were visually distracting. To address this, I used the Clone tool to replicate
+        the stars and extend the sky area, effectively removing the trees and creating a more open, spacious composition. I also used
+        the Dodge tool to darken the bottom portion of the image so that viewers would focus more on the title rather than the lower
+        details. Finally, I added the Springer logo at the bottom. Since the logo originally had a white background, I used the Invert
+        function to adjust it, ensuring it matched the overall dark tone of the cover.
+        </p>
+
+        <!-- Personal Logo Section -->
+        <h2 class="section-title" style="margin-top: 70px;">Personal Logo</h2>
+
+        <div class="image-row">
+            <img src="logo.png" alt="Personal Logo" class="project-img logo-img">
+        </div>
+
+        <p class="project-text">
+        I wanted to take this opportunity to design my own logo, so I chatted with ChatGPT to reflect on what values matter most to me.
+        Through our conversation, I identified three key themes: <strong>authenticity, connection, and growth</strong>. Thus, I tried to
+        integrate these into my design. The circular form symbolizes continuity and balance, while the diamond at the center reflects
+        integrity and self-awareness.
+        </p>
+
+        <p class="project-text">
+        Because I wanted the logo to resemble a badge, I found a helpful tutorial on YouTube:
+        <a href="https://www.youtube.com/watch?v=EX4T9sw6zIM">https://www.youtube.com/watch?v=EX4T9sw6zIM</a>.
+        One of the key features I used was thick lines for a badge-like style. Texts were intentionally written in all caps with bold weight.
+        </p>
+
+        <p class="project-text">
+        To create the design, I used several key tools in Inkscape (Ctrl + Shift + C for circles, Ctrl + B for lines, Path → Object to Path,
+        Text → Put on Path). Then, I applied the Cut Path function to divide the shape into sections, keeping only the curved line
+        connecting “CONNECT” and “GROWTH.” The final color scheme was achieved by layering two circles and adjusting their stacking order.
+        </p>
+
+	</div>
 </div>
 
-<script src="popsolution.js">
+<div id="footer">
+	<p>© 2025 Soomin Lee. All rights reserved.</p>
+</div>
 
-/*
-Instant-grading multiple choice quiz-
-By JavaScript Kit (javascriptkit.com)
-Over 200+ free scripts here!
-*/
-
-</script>
-<script language="JavaScript1.1">
-var whichone=1
-var tempmn=document.instantquiz.thequestion
-function generatequestions(){
-document.instantquiz.theresponse.selectedIndex=0
-if (!document.instantquiz.cmode.checked||whichone>=total+1||whichone<=0)
-document.instantquiz.thesolution.value=''
-if (whichone>=total+1)
-tempmn.value="🎉 Quiz Complete 🎉"
-else{
-tempmn.value=whichone+". "+question[whichone]+"\n\n"+"a)"+eval('choice'+whichone+'[1]')+"\n"+"b)"+eval('choice'+whichone+'[2]')+"\n"+"c)"+eval('choice'+whichone+'[3]')+"\n"+"d)"+eval('choice'+whichone+'[4]')
-if (document.instantquiz.cmode.checked)
-document.instantquiz.thesolution.value=solution[whichone]
-}
-}
-
-function responses(){
-var temp2=document.instantquiz.theresponse
-var temp3=temp2.options[temp2.selectedIndex].text
-if (temp3!=solution[whichone]&&temp2.selectedIndex!=0)
-document.instantquiz.thesolution.value="Sorry, the correct answer is "+solution[whichone]
-else if(temp2.selectedIndex!=0)
-document.instantquiz.thesolution.value=compliments[Math.round(Math.random()*compliments.length-1)]
-}
-
-generatequestions()
-</script>
 </body>
-
-
-
 </html>
