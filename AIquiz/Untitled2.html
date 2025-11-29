@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Soomin's AI Quiz</title>
+<style>
+  body {
+    background-color: #f5f7ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .quiz-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    padding: 30px 40px;
+    width: 500px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #3242a8;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    background: #f9faff;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #f5f7ff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+  }
+
+  button {
+    background-color: #3242a8;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #2433a0;
+  }
+
+  small a {
+    color: #3242a8;
+    text-decoration: none;
+  }
+
+  small a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="quiz-container">
+    <h2>🤖 Soomin's AI Quiz 🤖</h2>
+    <form name="instantquiz">
+      <textarea name="thequestion" readonly></textarea><br>
+      <input type="text" name="thesolution" placeholder="Your feedback will appear here..." readonly><br>
+      
+      <label><strong>Your Answer:</strong></label><br>
+      <select name="theresponse" onchange="responses()">
+        <option value="">-- Choose an option --</option>
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+        <option value="d">d</option>
+      </select><br>
+
+      <div>
+        <button type="button" onclick="if (whichone>1){whichone--;generatequestions()}">← Back</button>
+        <button type="button" onclick="if (whichone<=total){whichone++;generatequestions()}">Next →</button>
+      </div>
+
+      <small>
+        <a href="#" onclick="whichone=1;generatequestions();return false;">Start Over</a>
+        &nbsp;|&nbsp;
+        <label><input type="checkbox" name="cmode" value="ON"> Cheat Mode</label>
+      </small>
+    </form>
+
+    <div class="footer">
+      <p>This quiz script was adapted by Soomin based on <a href="https://javascriptkit.com" target="_blank">JavaScript Kit</a>.</p>
+    </div>
+  </div>
+
+<script src="popsolution.js"></script>
+
+<script>
+var whichone = 1;
+var tempmn = document.instantquiz.thequestion;
+
+function generatequestions(){
+  document.instantquiz.theresponse.selectedIndex = 0;
+  if (!document.instantquiz.cmode.checked || whichone >= total+1 || whichone <= 0)
+    document.instantquiz.thesolution.value = '';
+
+  if (whichone >= total + 1){
+    tempmn.value = "🎉 Congrats! This is the end of the quiz. 🎉";
+  } else {
+    tempmn.value =
+      whichone + ". " + question[whichone] + "\n\n" +
+      "a) " + eval("choice" + whichone + "[1]") + "\n" +
+      "b) " + eval("choice" + whichone + "[2]") + "\n" +
+      "c) " + eval("choice" + whichone + "[3]") + "\n" +
+      "d) " + eval("choice" + whichone + "[4]");
+    if (document.instantquiz.cmode.checked)
+      document.instantquiz.thesolution.value = "✅ Correct answer: " + solution[whichone].toUpperCase();
+  }
+}
+
+function responses(){
+  var temp2 = document.instantquiz.theresponse;
+  var temp3 = temp2.options[temp2.selectedIndex].text;
+  if (temp3 !== solution[whichone] && temp2.selectedIndex !== 0){
+    document.instantquiz.thesolution.value = "❌ Incorrect. Correct answer: " + solution[whichone].toUpperCase();
+  } else if (temp2.selectedIndex !== 0){
+    document.instantquiz.thesolution.value = "✅ " + compliments[Math.floor(Math.random() * compliments.length)];
+  }
+}
+
+generatequestions();
+</script>
+</body>
+</html>
