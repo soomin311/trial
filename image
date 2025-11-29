@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Editing</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="logo" class="container">
+    <h1>Image Editing</h1>
+    <p>This page showcases my image editing projects.</p>
+  </div>
+
+  <div id="page" class="container">
+    <p>여기에 이미지 편집 작업 내용 넣으면 됨 :)</p>
+  </div>
+</div>
+
+</body>
+</html>
