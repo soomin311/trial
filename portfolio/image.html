@@ -1,45 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-Name       : Vestibule 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130406
--->
-
-<!-- Comments are in ALL CAPS -->
-
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Image Editing</title>
 
-<!-- SET THE PAGE TITLE INSIDE THE TITLE TAGS BELOW -->
-<title>Soomin's E-Portfolio</title>
-
-<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
 <body>
 
 <div id="wrapper">
-<!-- START OF THE NAVIGATION SECTION.  DO NOT CHANGE ANYTHING ABOVE THIS LINE EXCEPT TO SET THE TITLE. -->
 
-
+	<!-- Navigation -->
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
-				<!-- NAVIGATION MENU.  THERE SHOULD BE ONE LIST ITEM FOR EACH BUTTON IN YOUR NAVIGATION BAR. -->
-                <!-- REPLACE THE # IN THE LINK WITH THE FILE NAME OF THE APPROPRIATE PAGE.  -->
-                <li class="current_page_item"><a href="index.html">About</a></li>
-				<li><a href="portfolio/image.html">Image Editing</a></li>
+                <li><a href="index.html">About</a></li>
+				<li class="current_page_item"><a href="image.html">Image Editing</a></li>
 				<li><a href="web.html">Web Design</a></li>
 				<li><a href="video.html">Video Production</a></li>
 				<li><a href="animation.html">Animation</a></li>
@@ -48,111 +26,70 @@ Released   : 20130406
 			</ul>
 		</div>
 	</div>
+
+	<!-- Page Title -->
 	<div id="logo" class="container">
-		<!-- THIS IS WHERE YOU CUSTOMIZE THE HEADER FOR EACH PAGE. -->
-        <h1>Soomin's E-Portfolio</h1>
-		<!-- THIS IS WHERE YOU CUSTOMIZE THE SUBHEADER FOR EACH PAGE. -->
-        <p>eme6208. design and development.</p>
+		<h1>Image Editing</h1>
+		<p>Book Cover & Personal Logo Design</p>
 	</div>
-<div id="page" class="container">
-  <div>
-    <div class="entry intro-section">
-      <!-- 인트로 텍스트 -->
-      <div class="intro-text">
-        <p>Welcome to my e-portfolio, a space that captures my journey as a designer, researcher, and learner. <br><br>
-        Here, I share my growth in web design, digital media, and user experience through projects, reflections, and creative experiments. <br><br>
-        Each artifact tells a small part of how I think, build, and learn.</p>
-      </div>
 
-      <!-- 프로필 이미지 -->
-      <div class="intro-photo">
-        <img src="soomin.jpeg" alt="Soomin Lee profile photo">
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-<!-- END OF THE NAVIGATION SECTION. -->
+	<div id="page" class="container">
 
-<!-- START OF THE CONTENT SECTION. -->
+        <!-- Book Cover Section -->
+        <h2 class="section-title">Book Cover</h2>
 
-<!-- ON OTHER PAGES, LIKE THE PROJECT PAGES, YOU WILL TAKE OUT EVERYTHING BETWEEN HERE AND THE END OF THE CONTENT SECTION AND REPLACE IT WITH THE PROJECT CONTENT. -->
-    
-    
-    
-    
-	<div id="three-column" class="container">
-		<div class="tbox1">
-			<div class="box-style">
-				<div class="content">
-					
-					<h2>Image Editing</h2>
-					<p>I created a "montage," or bitmap images and text combined to form a composite illustration, for a cover for a book. Also, I designed a logo of my personal identity using Inkscape. </p>
-					<a href="image.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox2">
-			<div class="box-style">
-				<div class="content">
-					<h2>Web Design</h2>
-					<p>I designed a quiz webpage on AI knowledge and a drag-and-drop webpage that allows users to practice categorizing different verbs according to Bloom’s Taxonomy, using HTML, CSS, and JavaScript. </p>
-					<a href="web.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox3">
-			<div class="box-style">
-				<div class="content">
-					<h2>Video Production</h2>
-					<p>To be updated.</p>
-					<a href="video.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
+        <div class="image-row">
+            <img src="pre_bookcover.png" alt="Original Image" class="project-img">
+            <img src="bookcover.png" alt="Book Cover" class="project-img">
+        </div>
+
+        <p class="project-text">
+        I used the photo above as the original image for my book cover because it was one of the highest-resolution photos I had.
+        Since the background was quite dark, I wrote the title and author names in white for better visibility. To make the author
+        names stand out more clearly from the background, I added a semi-transparent rectangle behind them and applied a blur effect,
+        creating a subtle separation. The original book title began with the word “Mapping,” but because my image shows a
+        star-filled night sky, I replaced it with “Navigating” to better align with the visual theme.
+        </p>
+
+        <p class="project-text">
+        In the original photo, the trees on both sides were visually distracting. To address this, I used the Clone tool to replicate
+        the stars and extend the sky area, effectively removing the trees and creating a more open, spacious composition. I also used
+        the Dodge tool to darken the bottom portion of the image so that viewers would focus more on the title rather than the lower
+        details. Finally, I added the Springer logo at the bottom. Since the logo originally had a white background, I used the Invert
+        function to adjust it, ensuring it matched the overall dark tone of the cover.
+        </p>
+
+        <!-- Personal Logo Section -->
+        <h2 class="section-title" style="margin-top: 70px;">Personal Logo</h2>
+
+        <div class="image-row">
+            <img src="logo.png" alt="Personal Logo" class="project-img logo-img">
+        </div>
+
+        <p class="project-text">
+        I wanted to take this opportunity to design my own logo, so I chatted with ChatGPT to reflect on what values matter most to me.
+        Through our conversation, I identified three key themes: <strong>authenticity, connection, and growth</strong>. Thus, I tried to
+        integrate these into my design. The circular form symbolizes continuity and balance, while the diamond at the center reflects
+        integrity and self-awareness.
+        </p>
+
+        <p class="project-text">
+        Because I wanted the logo to resemble a badge, I found a helpful tutorial on YouTube:
+        <a href="https://www.youtube.com/watch?v=EX4T9sw6zIM">https://www.youtube.com/watch?v=EX4T9sw6zIM</a>.
+        One of the key features I used was thick lines for a badge-like style. Texts were intentionally written in all caps with bold weight.
+        </p>
+
+        <p class="project-text">
+        To create the design, I used several key tools in Inkscape (Ctrl + Shift + C for circles, Ctrl + B for lines, Path → Object to Path,
+        Text → Put on Path). Then, I applied the Cut Path function to divide the shape into sections, keeping only the curved line
+        connecting “CONNECT” and “GROWTH.” The final color scheme was achieved by layering two circles and adjusting their stacking order.
+        </p>
+
 	</div>
-	<div id="three-column" class="container">
-		<div class="tbox1">
-			<div class="box-style">
-				<div class="content">
-					<h2>Digital Animation</h2>
-					<p>To be updated.</p>
-					<a href="animation.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox2">
-			<div class="box-style">
-				<div class="content">
-					<h2>Screencasting</h2>
-					<p>To be updated.</p>
-					<a href="screencast.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox3">
-			<div class="box-style">
-				<div class="content">
-					<h2>E-Portfolio</h2>
-					<p>This e-portfolio is a reflection of my web design skills developed throughout this course. It demonstrates my ability to plan, design, and implement interactive and visually engaging webpages using HTML, CSS, and JavaScript.</p>
-				
-				</div>
-			</div>
-		</div>
-	</div>	
-    
-    
-    
-    
-    
-<!-- END OF THE CONTENT SECTION.  BELOW YOU CAN CUSTOMIZE YOUR FOOTER. -->
 </div>
 
 <div id="footer">
-	<!-- START FOOTER -->
-	<p>© 2025 Untitled Inc. All rights reserved. Please get in touch with Soomin Lee via email if you have any questions (soomin.lee@ufl.edu).</p>
-    <!-- END FOOTER -->
+	<p>© 2025 Soomin Lee. All rights reserved.</p>
 </div>
 
 </body>
