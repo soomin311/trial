@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Video Production</title>
+
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+<div id="wrapper">
+
+	<!-- NAVIGATION MENU -->
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="image.html">Image Editing</a></li>
+				<li><a href="web.html">Web Design</a></li>
+				<li class="current_page_item"><a href="video.html">Video Production</a></li>
+				<li><a href="animation.html">Animation</a></li>
+				<li><a href="screencast.html">Screencast</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- PAGE HEADER -->
+	<div id="logo" class="container">
+		<h1>Video Production</h1>
+		<p>Storytelling with multimedia, narration, and purposeful design</p>
+	</div>
+
+	<!-- PAGE CONTENT -->
+	<div id="page" class="container">
+
+		<div class="entry">
+			<h2>Microcredential Introduction Video</h2>
+
+			<p><strong>Project Link:</strong>  
+				<a href="https://youtu.be/cIuFKSjfqgU" target="_blank">https://youtu.be/cIuFKSjfqgU</a>
+			</p>
+
+			<h3>Project Overview</h3>
+			<p>
+				For this project, I created a short introductory video based on my microcredential work.  
+				I began by writing scripts that explained key ideas of microcredentials, ensuring that each section had a clear message and narrative flow.
+			</p>
+
+			<h3>Design & Production Process</h3>
+			<ul>
+				<li><strong>Scriptwriting:</strong>  
+					Wrote a structured script outlining the core concepts and purpose of the microcredential.
+				</li>
+				<li><strong>Media Curation:</strong>  
+					Collected free images and video clips from various royalty-free platforms to visually represent each script segment.
+				</li>
+				<li><strong>Visual Effects:</strong>  
+					Added zooms, pans, fade-ins, fade-outs, and other transitions to maintain viewer engagement.
+				</li>
+				<li><strong>Narration:</strong>  
+					Generated professional-sounding narration using a text-to-speech tool.
+				</li>
+				<li><strong>Audio Design:</strong>  
+					Included low-volume background music to enhance tone without overpowering narration.
+				</li>
+				<li><strong>Accessibility:</strong>  
+					Added captions for two slides to support clarity and accessibility.
+				</li>
+			</ul>
+
+			<h3>Reflection</h3>
+			<p>
+				This project helped me practice end-to-end multimedia production—from scriptwriting to visual editing and audio design.  
+				By integrating images, movement, narration, and captions, I learned how to build a video that is both visually engaging and pedagogically aligned with the message I wanted to communicate.
+			</p>
+		</div>
+
+	</div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+	<p>© 2025 Soomin Lee. All rights reserved.</p>
+</div>
+
+</body>
+</html>
