@@ -425,3 +425,22 @@ hr {
     font-size: 18px !important;
     line-height: 1.5;
 }
+
+/* -------------------------------------- */
+/* Force left alignment for video page    */
+/* -------------------------------------- */
+
+#page .entry h2,
+#page .entry h3,
+#page .entry p,
+#page .entry ul,
+#page .entry li {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Keep lists visually aligned */
+#page .entry ul {
+    padding-left: 20px;
+}
