@@ -345,3 +345,21 @@ body {
   transform: scale(1.03);
 }
 
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-img {
+    width: 420px;   /* 원하는 크기로 통일 */
+    height: auto;
+    border-radius: 8px;
+}
+
+.logo-img {
+    width: 300px;
+    height: auto;
+}
