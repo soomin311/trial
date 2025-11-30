@@ -450,3 +450,32 @@ body, h1, h2, h3, h4, p, ul, li, a, div, span {
     font-family: 'DM Sans', 'Poppins', sans-serif !important;
 }
 
+
+/* ----------------------------- */
+/* Heading sizes (consistent)    */
+/* ----------------------------- */
+
+h1 {
+    font-size: 42px; /* 큰 제목 */
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 30px; /* 섹션 제목 */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px; /* 소제목 */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Paragraph & list text size */
+p, li {
+    font-size: 16px;
+    line-height: 1.7;
+}
