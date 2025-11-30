@@ -346,6 +346,10 @@ body {
 }
 
 
+/* ------------------------------------------------ */
+/* Custom image styling for image.html */
+/* ------------------------------------------------ */
+
 .image-row {
     display: flex;
     justify-content: center;
@@ -354,7 +358,7 @@ body {
 }
 
 .project-img {
-    width: 420px;   /* 원하는 크기로 통일 */
+    width: 420px;
     height: auto;
     border-radius: 8px;
 }
