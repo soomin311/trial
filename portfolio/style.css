@@ -479,3 +479,11 @@ p, li {
     font-size: 16px;
     line-height: 1.7;
 }
+
+/* Prevent image clipping */
+.project-img,
+.logo-img {
+    object-fit: contain !important;
+    width: 420px;   /* 북커버 기본 width 유지 */
+    height: auto;   /* 비율 유지 */
+}
