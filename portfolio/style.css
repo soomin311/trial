@@ -444,3 +444,9 @@ hr {
 #page .entry ul {
     padding-left: 20px;
 }
+
+/* Force global font family */
+body, h1, h2, h3, h4, p, ul, li, a, div, span {
+    font-family: 'DM Sans', 'Poppins', sans-serif !important;
+}
+
